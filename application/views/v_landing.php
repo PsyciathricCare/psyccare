@@ -57,17 +57,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</nav>
 
   <!-- Header -->
-	<div class="header">
 	<div class="header" style="background-color: #00BFFF">
 	  <a href="#default" class="logo">CompanyLogo</a>
 	  <div class="header-right">
 	    <a class="active" href="#home">Home</a>
-	    <a href="#contact">Contact</a>
-	    <a href="#about">About</a>
 	    <a href="#aboutt">About</a>
 	    <a href="#login">Login</a>
 	  </div>
 	</div>
+
 
 	<center>
 		<img src="<?php echo base_url(); ?>assets/test.jpg" class="img-fluid" alt="Responsive image">
