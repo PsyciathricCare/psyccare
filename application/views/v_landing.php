@@ -20,55 +20,35 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	  <a class="navbar-brand" href="#">Navbar</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    <ul class="navbar-nav mr-auto">
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Link</a>
-	      </li>
-	      <li class="nav-item dropdown">
-	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          Dropdown
-	        </a>
-	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	          <a class="dropdown-item" href="#">Action</a>
-	          <a class="dropdown-item" href="#">Another action</a>
-	          <div class="dropdown-divider"></div>
-	          <a class="dropdown-item" href="#">Something else here</a>
-	        </div>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link disabled" href="#">Disabled</a>
-	      </li>
-	    </ul>
-	    <form class="form-inline my-2 my-lg-0">
-	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-	    </form>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light-fixed-top">
+	  <div class="container-fluid">
+    	<div class="navbar-header">
+      	  <a class="navbar-brand" href="#">PSYCHIATRIC CARE</a>
+	  	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	      </button>
+   		</div>
+	   	<ul class="navbar-nav ml-auto">
+	      <li><a href="#caridokter">Cari Dokter</a></li>
+	      <li><a href="#tanyadokter">Tanya Dokter</a></li>
+	      <li><a href="#link">Artikel Kesehatan</a></li>
+		  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+		</ul>	    
 	  </div>
 	</nav>
 
   <!-- Header -->
 	<div class="header" style="background-color: #00BFFF">
-	  <a href="#default" class="logo">CompanyLogo</a>
-	  <div class="header-right">
-	    <a class="active" href="#home">Home</a>
-	    <a href="#aboutt">About</a>
-	    <a href="#login">Login</a>
-	  </div>
+	  <img src="<?php echo base_url(); ?>assets/doc.png" alt="logo" style="width: 150px; height: 150px;">
+	  <form action="/action_page.php" style="float: right; width: 80%">
+	      <input type="text" placeholder="Search.." name="search" style="padding: 8px; font-size: 16px; height: 40px; border: 1px solid grey; float: left; width: 50%; background: #f1f1f1;">
+	      <button type="submit" style="float: left; height: 40px; width: 5%; padding: 8px; background: #2196F3; color: white; font-size: 16px; border: 1px solid grey; border-left: none; cursor: pointer;"><i class="fa fa-search"></i></button>
+	  </form>
 	</div>
 
 
 	<center>
-		<img src="<?php echo base_url(); ?>assets/test.jpg" class="img-fluid" alt="Responsive image">
+		<img src="<?php echo base_url(); ?>assets/1.png" class="img-fluid" alt="Responsive image">
 	</center>
 
 </body>
