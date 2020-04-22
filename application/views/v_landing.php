@@ -32,7 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	      <li><a href="#caridokter">Cari Dokter</a></li>
 	      <li><a href="#tanyadokter">Tanya Dokter</a></li>
 	      <li><a href="#link">Artikel Kesehatan</a></li>
-		  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+		  <li><a href="#login"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
 		</ul>	    
 	  </div>
 	</nav>
