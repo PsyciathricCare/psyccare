@@ -1,0 +1,39 @@
+INSERT INTO `dokter`(`id_dokter`, `nama_dokter`, `bidang`, `lulusan`, `nomor_izinpraktik`, `lokasi_praktik`, `pengalaman_kerja`, `foto`) VALUES
+('1301', 'dr.Claire Browne, Sp.KJ', 'Spesialis Kedokteran Jiwa','Universitas Indonesia','1213451289','Dayeuh Kolot, Bandung', '6 Tahun', 'foto1.jpg'),
+('1302', 'dr.Shaun Murphy, Sp.KJ, FAPM', 'Spesialis Kedokteran Jiwa','Universitas Indonesia','1213454123','Geger Kalong, Bandung', '7 Tahun', 'foto2.jpg'),
+('1303', 'dr.Indah Kusumaningrum, Sp.KJ', 'Spesialis Kedokteran Jiwa','Universitas Padjadjaran','1213459874','Buah Batu, Bandung', '5 Tahun', 'foto3.jpg'),
+('1304', 'dr.Ratih Pradnyaswari, Sp.KJ', 'Spesialis Kedokteran Jiwa','Universitas Udayana','1213450923','Cibiru, Bandung', '4 Tahun', 'foto4.jpg'),
+('1305', 'dr.Strange, Sp.KJ, M.Kes', 'Spesialis Kedokteran Jiwa','Universitas Airlangga','1213450981','Kopo, Bandung', '12 Tahun', 'foto5.jpg'),
+('1306', 'dr.Hannibal Lecter, Sp.KJ, FAPM', 'Spesialis Kedokteran Jiwa','Universitas Sumatera Utara','1213458923','Caringin, Bandung', '15 Tahun', 'foto6.jpg');
+
+INSERT INTO `pasien`(`id_pasien`, `nama_pasien`, `keluhan`, `pekerjaan`, `alamat`) VALUES
+('1401', 'Wahyu','Kesulitan dalam berkonsentrasi dan Mengingat','Supir','Ciperna, Bandung'),
+('1402', 'Abigail','Phobia terhadap ketinggian','Pengusaha','Ledeng, Bandung'),
+('1403', 'Adena','Serasa memiliki beberapa kepribadian yang lain','Programmer','Kebon Kelapa, Bandung'),
+('1404', 'Asep','Kesulitan dalam berkonsentrasi dan Mengingat','Pedagang','Margahayu, Bandung'),
+('1405', 'Mina','Merasa sangat cemas','Artis','Cikutra, Bandung'),
+('1406', 'Berliana','Perubahan suasana hati yang drastis','Politikus','Lembang, Bandung'),
+('1407', 'Nana','Merasakan nyeri padahal tidak ada luka pada tubuh','PNS','Ciwidey, Bandung'),
+('1408', 'Ujang','sering sekali mengalami paranoid','PNS','Cibaduyut, Bandung'),
+('1409', 'Irene','Phobia terhadap tempat gelap dan ruangan smepit','Model','Dago, Bandung'),
+('14010', 'Teguh','sering sekali mengalami halusinasi yang berlebihan','PNS','Rancaekek, Bandung');
+
+INSERT INTO `konsultasi`(`id_konsultasi`, `id_dokter`, `id_pasien`, `jadwal_konsultasi`, `waktu`, `harga_jasa`) VALUES
+('1501', '1303','1401','2020-03-12','3','600000'),
+('1502', '1305','1402','2020-03-14','3','900000'),
+('1503', '1302','1403','2020-03-17','1','250000'),
+('1504', '1301','1404','2020-03-18','1','250000'),
+('1505', '1305','1405','2020-03-18','2','600000'),
+('1506', '1304','1406','2020-03-22','2','400000'),
+('1507', '1302','1407','2020-03-25','4','900000'),
+('1508', '1301','1408','2020-04-02','2','500000'),
+('1509', '1304','1409','2020-04-05','1','200000'),
+('15010', '1301','14010','2020-04-07','2','500000'),
+('15011', '1305','1407','2020-04-09','2','500000'),
+('15012', '1304','1404','2020-04-10','3','600000'),
+('15013', '1303','1401','2020-04-13','2','400000'),
+('15014', '1302','1403','2020-04-15','2','500000'),
+('15015', '1306','1402','2020-04-19','1','300000'),
+('15016', '1302','1408','2020-04-20','1','250000'),
+('15017', '1301','1409','2020-04-24','1','250000'),
+('15018', '1306','1405','2020-04-27','2','700000');
