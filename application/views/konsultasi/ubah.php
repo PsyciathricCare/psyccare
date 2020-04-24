@@ -1,24 +1,3 @@
-<head>
-      <!-- framework bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-  <!-- datepicker bootstrap -->
-  <link rel="stylesheet" href="bootstrap-datepicker/css/bootstrap-datepicker.min.css">
-  <script src="bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-  <script src="bootstrap-datepicker/locales/bootstrap-datepicker.id.min.js"></script>
-  <script>
-  $( function() {
-    $( "#date" ).datepicker({
-      autoclose:true,
-      todayHighlight:true,
-      format:'yyyy-mm-dd',
-      language: 'id'
-    });
-  } );
-  </script>
-</head>
 <div class="container">
     <div class="row mt-3">
         <div class="col md-6">

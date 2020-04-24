@@ -38,17 +38,18 @@
             <table class="table mt-5">
                 <thead>
                     <tr>
-                        <th class="text-center" scope="col">ID Penyakit</th>
+                        <th class="text-left" scope="col">Nomor</th>
                         <th class="text-center" scope="col">Nama</th>
-                        <th class="text-center" scope="col">Keterangan</th>
+                        <th class="text-left" scope="col">Keterangan</th>
+                        <th class="text-left" scope="col">Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr><?php foreach ($penyakit as $pkt) : ?>
-                        <td class="text-center"><?= $pkt['id']; ?></td>
-                        <td class="text-center"><?= $pkt['nama']; ?></td>
-                        <td class="text-center"><?= $pkt['keterangan']; ?></td>
-                        <td class="text-center">
+                        <td class="text-left"><?= $pkt['id']; ?></td>
+                        <td class="text-center"><b><?= $pkt['nama']; ?></b></td>
+                        <td class="text-left"><?= $pkt['keterangan']; ?></td>
+                        <td class="text-left">
                             <a href="<?= base_url(); ?>Penyakit/hapus/<?= $pkt['id'] ?>" class="badge badge-danger float-center" onclick="return confirm('Apakah anda yakin menghapus data ini?');" ?>hapus</a>
                             <a href="<?= base_url(); ?>Penyakit/ubah/<?= $pkt['id'] ?>" class="badge badge-success float-center" ?>ubah</a>
                         </td>
