@@ -39,10 +39,6 @@
                       <a class="nav-item nav-link" href="<?= base_url(); ?>obat">Obat</a>
                       <a class="nav-item nav-link" href="#">About</a>
                   </div>
-                  <div class="nav navbar-nav navbar-right ml-3">
-                      <a href="#" class="btn btn-outline-success mr-3">Login</a>
-                      <a href="#" class="btn btn-outline-danger">Daftar</a>
-                  </div>
               </div>
           </div>
       </nav>

@@ -34,7 +34,7 @@
             </a>
           </div>
           <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="<?= base_url(); ?>dokter" class="item-wrap fancybox">
+            <a href="<?= base_url(); ?>pasien" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Pasien</h3>
               </div>
@@ -42,7 +42,7 @@
             </a>
           </div>
           <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="<?= base_url(); ?>dokter" class="item-wrap fancybox">
+            <a href="<?= base_url(); ?>konsultasi" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Konsultasi</h3>
               </div>
@@ -50,7 +50,7 @@
             </a>
           </div>
           <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="<?= base_url(); ?>dokter" class="item-wrap fancybox">
+            <a href="<?= base_url(); ?>penyakit" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Penyakit</h3>
               </div>
@@ -58,7 +58,7 @@
             </a>
           </div>
           <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="<?= base_url(); ?>dokter" class="item-wrap fancybox">
+            <a href="<?= base_url(); ?>obat" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Obat</h3>
               </div>
