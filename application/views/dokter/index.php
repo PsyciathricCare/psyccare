@@ -40,25 +40,25 @@
                     <tr>
                         <th class="text-center" scope="col">ID_Dokter</th>
                         <th class="text-center" scope="col">Nama</th>
-                        <th class="text-center" scope="col">Spesialis Bidang</th>
-                        <th class="text-center" scope="col">Lulusan</th>
-                        <th class="text-center" scope="col">No.Izin Praktik</th>
-                        <th class="text-center" scope="col">Lokasi Praktik</th>
-                        <th class="text-center" scope="col">Pengalaman Kerja</th>
-                        <th class="text-center" scope="col">AKSI</th>
+                        <th class="text-left" scope="col">Keterangan</th>
+                        <th class="text-left" scope="col">AKSI</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr><?php foreach ($dokter as $dkt) : ?>
-                        <td class="text-center"><?= $dkt['id_dokter']; ?></td>
-                        <td class="text-center"><?= $dkt['nama_dokter']; ?></td>
-                        <td class="text-center"><?= $dkt['bidang']; ?></td>
-                        <td class="text-center"><?= $dkt['lulusan']; ?></td>
-                        <td class="text-center"><?= $dkt['nomor_izinpraktik']; ?></td>
-                        <td class="text-center"><?= $dkt['lokasi_praktik']; ?></td>
-                        <td class="text-center"><?= $dkt['pengalaman_kerja']; ?></td>
-                        <td class="text-center">
-                            <a href="<?= base_url(); ?>dokter/hapus/<?= $dkt['id_dokter'] ?>" class="badge badge-danger float-center" onclick="return confirm('Apakah anda yakin menghapus data ini?');" ?>hapus</a>
+                        <td class="text-center" ><?= $dkt['id_dokter']; ?></td>
+                        <td class="text-center"><img src="assets/dokter/<?php echo $dkt['foto'];?>"width="130"></br>
+                            <?= $dkt['nama_dokter'];?>
+                        </td>
+                        <td class="text-left">
+                            <b>Bidang            : </b>  <?= $dkt['bidang']; ?> </br>
+                            <b>Lulusan           : </b> <?= $dkt['lulusan']; ?> </br>
+                            <b>Nomor Izin Praktik:</b><?= $dkt['nomor_izinpraktik']; ?> </br>
+                            <b>Lokasi Praktik    :</b> <?= $dkt['lokasi_praktik']; ?> </br>
+                            <b>Pengalaman Kerja  :</b> <?= $dkt['pengalaman_kerja']; ?>
+                        </td>
+                        <td class="text-left">
+                            <a href="<?= base_url(); ?>dokter/hapus/<?= $dkt['id_dokter'] ?>" class="badge badge-danger float-center" onclick="return confirm('Apakah anda yakin menghapus data ini?');" ?>hapus</a></br>
                             <a href="<?= base_url(); ?>dokter/ubah/<?= $dkt['id_dokter'] ?>" class="badge badge-success float-center" ?>ubah</a>
                         </td>
                     </tr>
