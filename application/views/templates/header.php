@@ -37,7 +37,7 @@
                       <a class="nav-item nav-link" href="<?= base_url(); ?>konsultasi">Konsultasi</a>
                       <a class="nav-item nav-link" href="<?= base_url(); ?>penyakit">Penyakit</a>
                       <a class="nav-item nav-link" href="<?= base_url(); ?>obat">Obat</a>
-                      <a class="nav-item nav-link" href="#">About</a>
+                      <a class="nav-item nav-link" href="<?= base_url(); ?>dokter">About</a>
                   </div>
               </div>
           </div>
